@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menjadi Penulis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="#" class="active">Beranda</a></li>
+            <li><a href="#">Karya</a></li>
+            <li><a href="#">Kutipan</a></li>
+            <li><a href="#">Para Penulis</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="main-content">
+            <section class="featured-work">
+                <h1 class="work-title">"Aku Hanya Ingin Menulis Novel, Tapi Kenapa Harus Bertemu Pria Misterius yang Selalu Minum Kopi Hitam di Kafe Ini?!"</h1>
+                <div class="work-image">
+                    <img src="/image/featured_image.jpg" alt="Romantic Comedy Featured Image">
+                </div>
+                <div class="work-meta">
+                    <span class="author">Oleh Akiko Tanaka</span>
+                    <span class="date">Diterbitkan pada 20 Maret 2024</span>
+                </div>
+                <div class="work-content">
+                    <p>Mai adalah seorang penulis pemula yang bercita-cita menerbitkan novel pertamanya. Namun, pekerjaan paruh waktunya di sebuah kafe kecil di Tokyo membuatnya kesulitan menemukan waktu untuk menulis. Suatu hari, ia bertemu Haruki, seorang pria misterius yang selalu memesan kopi hitam dan duduk di sudut kafe sambil mencoret-coret buku catatannya.</p>
+        
+                    <p>Pertemuan pertama mereka tidak berjalan mulus—Mai secara tidak sengaja menumpahkan matcha latte ke naskah Haruki! Dengan panik, Mai meminta maaf berkali-kali dan menawarkan diri untuk membantu menulis ulang halaman-halaman yang rusak. Betapa terkejutnya Mai ketika Haruki mengungkapkan bahwa ia adalah seorang editor di salah satu penerbit besar di Tokyo.</p>
+        
+                    <p>"Kalau kamu benar-benar minta maaf," kata Haruki dengan senyum jahil, "tunjukkan aku tulisanmu." Meski gugup, Mai memberikan cerpen yang sedang ia kerjakan. Haruki membacanya dengan serius, lalu mengangguk pelan. "Tidak buruk. Kamu punya bakat."</p>
+        
+                    <p>Dari situ, mereka mulai bekerja sama. Haruki memberikan kritik pedas namun membangun, sementara Mai belajar untuk mengasah kemampuan menulisnya. Sesi editing malam hari mereka perlahan berubah menjadi sesi curhat tentang mimpi, kegagalan, dan harapan. Meski awalnya hanya rekan kerja, Mai mulai merasakan ada sesuatu yang lebih dari sekadar profesionalisme antara mereka.</p>
+        
+                    <p>Suatu malam, di bawah hujan bunga sakura di Taman Ueno, Haruki memberikan Mai sebuah naskah yang sudah dicetak rapi. "Kamu sudah siap," katanya dengan nada percaya diri. "Dunia butuh membaca ceritamu." Mai tak bisa menahan air mata. Ia menyadari bahwa selama ini ia tidak sendirian—Haruki telah menjadi pendukung terbesarnya.</p>
+        
+                    <p>Beberapa bulan kemudian, novel pertama Mai akhirnya diterbitkan dan mendapatkan pujian luas. Untuk merayakannya, Mai kembali ke kafe tempat semuanya dimulai. Di sana, Haruki sudah menunggu dengan secangkir kopi hitam seperti biasa. Di tangannya, ada salinan novel Mai.</p>
+        
+                    <p>"Ini pantas dirayakan," kata Haruki sambil tersenyum. Saat mereka berjalan bersama menyusuri malam Tokyo, Mai tersenyum dalam hati. Siapa sangka, cinta bisa datang dalam bentuk revisi tak terduga dalam hidupnya?</p>
+                </div>
+                <div class="read-more">
+                    <a href="/#" class="read-more-link">Aku Hanya Ingin Menulis Novel, Tapi Kenapa Harus Bertemu Pria Misterius yang Selalu Minum Kopi Hitam di Kafe Ini?! →</a>
+                </div>
+            </section>
+
+            <section class="top-authors">
+                <div class="section-header">
+                    <h2>Penulis Bulan Ini</h2>
+                </div>
+            
+                <!-- Carousel Wrapper -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
+                    <div class="carousel-track">
+                        <div class="author-list">
+                            <!-- Daftar penulis akan dirender di sini -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">&#10095;</button>
+                </div>
+            </section>
+
+            <section class="other-works">
+                <div class="section-header">
+                    <h2>Karya Lainnya</h2>
+                    <select id="sort-dropdown-other">
+                        <option value="latest">Terbaru</option>
+                        <option value="popularity">Popularitas</option>
+                    </select>
+                </div>
+                <div class="work-grid">
+                    <!-- Daftar karya akan dirender di sini -->
+                </div>
+            </section>
+        </main>
+
+
+        <aside class="news-bar">
+            <section class="quote-section">
+                <h2>Quote of the Day</h2>
+                <blockquote>
+                    <p>"A novel is a mirror walking down a road, reflecting not just the world around us, but the depths of our own souls."</p>
+                    <footer>- Unnamed writer</footer>
+                </blockquote>
+            </section>
+        
+            <section class="recent-release">
+                <div class="section-header">
+                    <h2>Keluaran Terbaru</h2>
+                    <select id="sort-dropdown">
+                        <option value="popularity">Popularitas</option>
+                        <option value="latest">Terbaru</option>
+                    </select>
+                </div>
+                <div class="work-list">
+                    <!-- Artikelnya disini -->
+                </div>
+            </section>
+        
+            <!-- Recent Comments moved here -->
+            <div class="recent-comments">
+                <h2>Komentar Terbaru</h2>
+                <div class="comments-list">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">@RegresiGuy</span>
+                            <span class="time">5 menit yang lalu</span>
+                        </div>
+                        <div class="comment-work">pada "Regresi ke Masa SMA: Aku yang Menjadi Sang Legenda"</div>
+                        <p>"Kalau aku regresi ke masa SMA, pertama-tama aku akan beli Bitcoin. Eh, tapi MC-nya malah sibuk jadi legenda. Prioritas, bro!"</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">@ReinkarnasiQueen</span>
+                            <span class="time">10 menit yang lalu</span>
+                        </div>
+                        <div class="comment-work">pada "Reinkarnasi Sebagai Putri Ditolak: Hidup Baru di Istana Musuh"</div>
+                        <p>"Putri ditolak tapi malah jadi bintang di istana musuh? Ini mah level petty-nya over 9000. Aku suka!"</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">@Gamer4Life</span>
+                            <span class="time">15 menit yang lalu</span>
+                        </div>
+                        <div class="comment-work">pada "Aku yang Terlempar ke Dunia Game: Menjadi NPC Terkuat"</div>
+                        <p>"NPC biasanya cuma bisa bilang 'Hello, traveler!'. Tapi ini NPC-nya malah jadi bos raid. Plot twist level dewa!"</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">@CintaVirtual</span>
+                            <span class="time">20 menit yang lalu</span>
+                        </div>
+                        <div class="comment-work">pada "Cinta Terlarang di Dunia Virtual"</div>
+                        <p>"Cinta terlarang di dunia virtual? Kayaknya aku pernah ngalamin ini pas main MMORPG. Tapi doi malah ghosting. Sad."</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">@TimeTraveler</span>
+                            <span class="time">30 menit yang lalu</span>
+                        </div>
+                        <div class="comment-work">pada "Dunia yang Berbeda: Aku dan Kamu di Garis Waktu yang Berbeda"</div>
+                        <p>"Garis waktu berbeda? Kayaknya aku sama doi juga beda timeline. Aku di timeline 'dia nggak balas chat', doi di timeline 'sibuk main game'."</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="about-me">
+                <div class="about-me-content">
+                    <h2>About Me</h2>
+                    <img src="/image/saya.jpg" alt="Foto Saya" class="profile-image">
+                    <p class="name">Rayina Ilham</p>
+                    <p class="description">
+                        Mahasiswa Universitas Gunadarma yang mengikuti program DBS Coding Camp 2025 program Front-End dan Back-End Developer.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/rayiil__/"><img src="/image/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/rayinailham/"><img src="/image/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://x.com/Rayiil_"><img src="/image/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </section>
+
+        </aside>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
