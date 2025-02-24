@@ -16,7 +16,6 @@ body {
     line-height: 1.8;
     color: #333;
     background-color: #f9f9f9;
-    padding: 20px;
 }
 
 
@@ -647,4 +646,104 @@ body {
 
 .about-me .social-icons img:hover {
     transform: scale(1.2);
+}
+
+/* ===============================
+   Footer Section
+=============================== */
+
+.footer-container {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about h3 {
+    font-size: 24px;
+    color: #4bbf4b;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.footer-links h4 {
+    font-size: 18px;
+    color: #4bbf4b;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4bbf4b;
+}
+
+.footer-fun-facts h4 {
+    font-size: 18px;
+    color: #4bbf4b;
+    margin-bottom: 15px;
+}
+
+.footer-fun-facts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-fun-facts ul li {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+.footer-about {
+    max-width: 500px;
+    text-align: justify;
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444444;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #cccccc;
 }
