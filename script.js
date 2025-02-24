@@ -261,15 +261,16 @@ function createAuthorPreview(author) {
     preview.className = 'author-preview';
 
     preview.innerHTML = `
-        <div style="display: flex; align-items: center; gap: 1rem;">
-            <img src="${author.profilePic}" alt="${author.name}" style="width: 50px; height: 50px; border-radius: 50%;">
-            <div>
-                <h3 style="font-size: 1rem; margin: 0;">${author.name}</h3>
-                <p style="color: #666; font-size: 0.9rem;">${author.worksCount} karya diterbitkan</p>
+        <a href="/" style="text-decoration: none; color: inherit;">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <img src="${author.profilePic}" alt="${author.name}" style="width: 50px; height: 50px; border-radius: 50%; cursor: pointer;">
+                <div>
+                    <h3 style="font-size: 1rem; margin: 0; cursor: pointer;">${author.name}</h3>
+                    <p style="color: #666; font-size: 0.9rem;">${author.worksCount} karya diterbitkan</p>
+                </div>
             </div>
-        </div>
+        </a>
     `;
-
     return preview;
 }
 

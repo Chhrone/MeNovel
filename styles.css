@@ -256,6 +256,24 @@ body {
     margin-right: 10px;
 }
 
+.author-preview a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+.author-preview img:hover,
+.author-preview h3:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease; 
+}
+
+.author-preview img,
+.author-preview h3 {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
 .carousel-btn {
     position: absolute;
     top: 50%;
