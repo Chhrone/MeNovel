@@ -25,18 +25,57 @@ body {
 =============================== */
 
 .navigation-bar {
-    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 40px;
     top: 0;
     margin-bottom: 20px;
 }
 
+.navigation-bar .logo {
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+}
+
 .navigation-bar ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
-    justify-content: center;
     gap: 3rem;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #234d23;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #1a3b1a;
+}
+
+@media (max-width: 768px) {
+    .navigation-bar ul {
+        gap: 1.5rem;
+    }
+
+    .navigation-bar a {
+        font-size: 1rem;
+    }
 }
 
 .navigation-bar a {
@@ -73,6 +112,7 @@ body {
     width: 100%;
     background-color: #234d23;
 }
+
 
 @media (max-width: 768px) {
     .navigation-bar ul {
