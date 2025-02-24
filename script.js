@@ -145,7 +145,7 @@ const authors = [
     { name: 'Aya Kimura', profilePic: '/image/profile20.jpg', worksCount: 16 },
 ];
 
-// Function untuk membuat item artikelnya
+// Function untuk membuat item karya
 function createworkPreview(work) {
     const preview = document.createElement('div');
     preview.className = 'work-preview';
@@ -171,13 +171,12 @@ function createworkPreview(work) {
 }
 
 
-
-// Function untuk membuat list artikel
+// Function untuk membuat list karya
 function renderworkList(works) {
     const workList = document.querySelector('.work-list');
     workList.innerHTML = '';
     
-    // Batasi artikel menjadi hanya 10
+    // Batasi menjadi hanya 10
     const limitedworks = works.slice(0, 6);
     
     limitedworks.forEach(work => {
@@ -185,7 +184,7 @@ function renderworkList(works) {
     });
 }
 
-// Sorting list artikel
+// Sorting list
 document.getElementById('sort-dropdown').addEventListener('change', (e) => {
     const sortBy = e.target.value;
     let sortedworks = [...works];
@@ -200,18 +199,16 @@ document.getElementById('sort-dropdown').addEventListener('change', (e) => {
         });
     }
     
-    // Render hanya 10 artikel setelah sorting
+    // Render hanya 10 karya setelah sorting
     renderworkList(sortedworks);
 });
 
-// Render artikel awal (default)
 renderworkList(works);
 
 function createWorkItem(work) {
     const item = document.createElement('div');
     item.className = 'work-item';
 
-    // Membuat elemen HTML dengan struktur baru
     item.innerHTML = `
         <a href="#" class="work-link">
             <img src="${work.thumbnail}" alt="${work.title}">
@@ -230,15 +227,14 @@ function renderOtherWorksList(works) {
     const workGrid = document.querySelector('.other-works .work-grid');
     workGrid.innerHTML = '';
 
-    // Batasi artikel menjadi hanya 12 (untuk grid)
-    const limitedWorks = works.slice(0, 12);
+    const limitedWorks = works.slice(0, 16);
 
     limitedWorks.forEach((work) => {
         workGrid.appendChild(createWorkItem(work));
     });
 }
 
-// Sorting list artikel
+// Sorting list 
 document.getElementById('sort-dropdown-other').addEventListener('change', (e) => {
     const sortBy = e.target.value;
     let sortedWorks = [...works];
@@ -253,11 +249,9 @@ document.getElementById('sort-dropdown-other').addEventListener('change', (e) =>
         });
     }
 
-    // Render hanya 12 artikel setelah sorting
     renderOtherWorksList(sortedWorks);
 });
 
-// Render artikel awal (default)
 renderOtherWorksList(works);
 
 
@@ -279,7 +273,6 @@ function createAuthorPreview(author) {
     return preview;
 }
 
-// Render daftar penulis dalam carousel
 let currentPage = 0;
 const itemsPerPage = 10;
 
@@ -296,10 +289,8 @@ function renderAuthorList(page) {
     });
 }
 
-// Inisialisasi carousel
 renderAuthorList(currentPage);
 
-// Event listener untuk tombol navigasi carousel
 document.addEventListener('DOMContentLoaded', () => {
     const carouselTrack = document.querySelector('.carousel-track');
     const prevButton = document.querySelector('.carousel-btn.prev');

@@ -1,4 +1,9 @@
+/* ===============================
+   Global Styles
+=============================== */
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -14,12 +19,13 @@ body {
     padding: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@500&display=swap');
 
+/* ===============================
+   Navigation Bar
+=============================== */
 
 .navigation-bar {
     padding: 1rem 2rem;
-    position: sticky;
     top: 0;
     margin-bottom: 20px;
 }
@@ -55,7 +61,6 @@ body {
     transition: width 0.3s ease;
 }
 
-
 .navigation-bar a:hover::after {
     width: 100%;
 }
@@ -73,11 +78,16 @@ body {
     .navigation-bar ul {
         gap: 1.5rem;
     }
-    
+
     .navigation-bar a {
         font-size: 1rem;
     }
 }
+
+
+/* ===============================
+   Container & Layout
+=============================== */
 
 .container {
     display: flex;
@@ -93,6 +103,34 @@ body {
     max-width: 75%;
     padding: 0 20px;
 }
+
+.news-bar {
+    flex: 2 0;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+
+    .news-bar {
+        flex-basis: auto;
+        max-width: 100%;
+    }
+}
+
+
+/* ===============================
+   Featured Work Section
+=============================== */
 
 .featured-work {
     font-family: 'EB Garamond', serif;
@@ -136,10 +174,6 @@ body {
     display: block;
 }
 
-.work-meta {
-    margin-top: 3cqh;
-}
-
 .work-meta span {
     margin-right: 10px;
 }
@@ -151,40 +185,41 @@ body {
     color: #444;
 }
 
+
+/* ===============================
+   Read More Link
+=============================== */
+
 .read-more {
-    text-align: right; /* Letakkan teks di ujung kanan */
-    margin-top: 20px; /* Jarak dari konten sebelumnya */
+    text-align: right;
+    margin-top: 20px;
 }
 
 .read-more-link {
     font-family: Arial, sans-serif;
     font-size: 1rem;
-    color: #242424; /* Warna biru untuk link */
-    text-decoration: none; /* Hilangkan garis bawah */
+    color: #434343;
+    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Efek hover */
-
-    /* Membatasi lebar maksimal */
-    max-width: 340px; /* Lebar maksimal 100px */
-    display: inline-block; /* Agar lebar bisa dibatasi */
-    word-wrap: break-word; /* Memastikan teks bertumpuk jika melebihi lebar */
-    white-space: normal; /* Memungkinkan teks pindah baris */
+    transition: color 0.3s ease;
+    max-width: 340px;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .read-more-link:hover {
-    color: #969696; /* Warna lebih gelap saat dihover */
+    color: #095a09;
 }
+
+
+/* ===============================
+   Top Authors Carousel
+=============================== */
 
 .top-authors {
     padding: 0;
     margin-bottom: 40px;
-}
-
-.top-authors .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
 }
 
 .carousel-container {
@@ -213,13 +248,12 @@ body {
     z-index: 1;
 }
 
-/* Styling untuk gambar profil penulis */
 .author-preview img {
-    width: 50px; /* Lebar tetap */
-    height: 50px; /* Tinggi tetap */
-    object-fit: cover; /* Pastikan gambar tetap proporsional */
-    border-radius: 50%; /* Opsi tambahan untuk membuat gambar bulat */
-    margin-right: 10px; /* Jarak antara gambar dan teks */
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .carousel-btn {
@@ -247,12 +281,9 @@ body {
 }
 
 
-/*News bar*/
-.news-bar {
-    flex: 2 0;
-    max-width: 600px;
-    padding: 0 20px;
-}
+/* ===============================
+   News Bar Sections
+=============================== */
 
 .quote-section,
 .recent-release {
@@ -261,15 +292,6 @@ body {
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.quote-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .quote-section h2 {
@@ -412,22 +434,28 @@ body {
 }
 
 
-/*Karya Lainnya*/
+/* ===============================
+   Other Works Section
+=============================== */
+
 .other-works {
     padding: 20px 0px;
     border-radius: 8px;
     margin-bottom: 40px;
 }
+
 .other-works .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
+
 .other-works h2 {
     font-size: 1.2rem;
     color: #333;
 }
+
 #sort-dropdown-other {
     padding: 5px 10px;
     border: 1px solid #ccc;
@@ -436,14 +464,17 @@ body {
     background-color: #f0f0f0;
     color: #333;
 }
+
 #sort-dropdown-other:hover {
     background-color: #e0e0e0;
 }
+
 .work-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
 .work-grid .work-item {
     display: flex;
     flex-direction: column;
@@ -455,10 +486,12 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 250px;
 }
+
 .work-grid .work-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .work-grid .work-item .work-link {
     text-decoration: none;
     color: inherit;
@@ -466,18 +499,21 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .work-grid .work-item .work-link img {
     width: 200px;
     height: 220px;
     object-fit: cover;
     border-radius: 8px;
 }
+
 .work-grid .work-item .work-link h3 {
     font-size: 0.9rem;
     margin: 5px 0 0;
     color: #333;
     line-height: 1.2;
 }
+
 .work-grid .work-item .details {
     display: flex;
     justify-content: space-between;
@@ -487,57 +523,25 @@ body {
     color: #666;
     margin-top: 5px;
 }
+
 .work-grid .work-item .details .published-time {
     text-align: left;
 }
+
 .work-grid .work-item .details .views {
     text-align: right;
 }
 
-@media (max-width: 768px) {
-    .navigation-bar ul {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .navigation-bar li:not(:last-child) {
-        border-right: none;
-        padding-right: 0;
-    }
+/* ===============================
+   About Me Section
+=============================== */
 
-    .container {
-        margin: 0 20px;
-    }
-
-    .news-bar {
-        display: none;
-    }
-
-    .carousel-container {
-        padding: 0 40px;
-    }
-
-    .carousel-btn {
-        font-size: 1.2rem;
-        padding: 8px;
-        scale: 0.8;
-    }
-
-    .carousel-btn.prev {
-        left: 10px;
-    }
-
-    .carousel-btn.next {
-        right: 10px;
-    }
-}
-
-/* Styling untuk section About Me */
 .about-me {
-    border-top: 1px solid #ccc; /* Garis pemisah di bagian atas */
+    border-top: 1px solid #ccc;
     padding: 40px 0;
     margin-top: 40px;
-    text-align: center; /* Semua konten di tengah */
+    text-align: center;
 }
 
 .about-me h2 {
@@ -547,10 +551,10 @@ body {
 }
 
 .about-me .profile-image {
-    width: 150px; /* Ukuran foto */
-    height: 150px;
-    object-fit: cover; /* Pastikan gambar tetap proporsional */
-    border-radius: 50%; /* Gambar bulat */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
     margin: 10px auto;
     display: block;
 }
@@ -565,41 +569,24 @@ body {
 .about-me .description {
     font-size: 0.9rem;
     color: #555;
-    text-align: justify; /* Text rata kiri-kanan */
+    text-align: justify;
     margin: 0 auto;
-    max-width: 600px; /* Batasi lebar teks */
+    max-width: 600px;
 }
 
 .about-me .social-icons {
     margin-top: 15px;
     display: flex;
-    justify-content: center; /* Icon medsos di tengah */
-    gap: 20px; /* Jarak antar icon */
+    justify-content: center;
+    gap: 20px;
 }
 
 .about-me .social-icons img {
-    width: 30px; /* Ukuran icon */
+    width: 30px;
     height: 30px;
-    transition: transform 0.3s ease; /* Efek hover */
+    transition: transform 0.3s ease;
 }
 
 .about-me .social-icons img:hover {
-    transform: scale(1.2); /* Perbesar saat dihover */
-}
-
-@media (max-width: 1200px) {
-    .container {
-        flex-direction: column;
-        max-width: 100%;
-        padding: 20px;
-    }
-
-    .main-content {
-        max-width: 100%;
-    }
-
-    .news-bar {
-        flex-basis: auto;
-        max-width: 100%;
-    }
+    transform: scale(1.2);
 }
